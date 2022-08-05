@@ -1,0 +1,36 @@
+<!-- shir -->
+<mat-toolbar color="primary" class="mat-elevation-z2">
+  <div>
+      <img [src] = "slogo" alt="" style="height: 80px; width: 80px; margin-top: 20px;">
+  </div>
+  <div>
+      <span class="fill"></span>
+      <button mat-button  routerLink="/home" routerLinkActive="active" color="white">Home</button>
+      <button mat-button  routerLink="/model" routerLinkActive="active" color="white" *ngIf = "(authService.getUser())|async">Test</button>
+  </div>
+  <div style="margin-left: 70%;">
+      <button mat-button routerLink="/login" routerLinkActive="active" color="white" *ngIf = "!((authService.getUser())|async)">Login</button>
+      <button mat-button routerLink="/singup" routerLinkActive="active" color="white" *ngIf = "!((authService.getUser())|async)">Sign Up</button>
+      <button mat-button [matMenuTriggerFor]="menu" color="white" *ngIf = "(authService.getUser())|async">
+        <mat-icon style="color: #ffffff; font-size: 30px;" aria-label="Side nav toggle icon">person</mat-icon>
+
+      </button>
+
+      <mat-menu #menu="matMenu" xPosition="before" >
+        <button style="width: 170px;" mat-menu-item routerLink="/profile"> 
+          <mat-icon  aria-label="Side nav toggle icon">list</mat-icon>
+          My Projects
+        </button>
+        <button style="width: 170px;" mat-menu-item (click)="logOut()" > 
+          <mat-icon  aria-label="Side nav toggle icon">logout</mat-icon>
+          Logout
+        </button>
+    </mat-menu>
+
+  </div>
+</mat-toolbar>
+<div style="background-color: #f5f5f5;
+
+">
+    <router-outlet></router-outlet>
+</div>

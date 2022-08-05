@@ -1,0 +1,75 @@
+/* asaf */
+h1{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:xx-large;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.imgH {
+  float: left;
+  max-width: 540px;
+
+  padding-top: 0px;
+  
+}
+.divAbout{
+   padding-left: 3%; 
+   margin-left: 50%;
+   border-left: 5px solid;
+   border-color: #0f8f70;
+   float: none;
+   line-height: 1.5;
+   font-size: 14px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   height: 308px;
+   padding-left: 50px;
+}
+.storyimg{
+    width: 95%;
+    height: 95%;
+}
+.divStory{
+    width: 28%;
+    float: left;
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 2%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 27px;
+    font-weight: 400;
+
+    color: #3d3d3d;
+}
+.divhead{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 25px;
+
+}
+.modelBut{
+    width: 160px;
+    height: 160px;
+    font-size: x-large;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+.divwelcome{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    padding-top: 1%;
+}

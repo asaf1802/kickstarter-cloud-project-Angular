@@ -1,0 +1,75 @@
+<!-- shir -->
+<mat-card style="max-width: 800px;
+ min-width: 800px; 
+ height: 540px; 
+ top: 100px; 
+ margin-left: auto; 
+ margin-right: auto; 
+ padding-left: 0px; 
+ padding-right: 50px; 
+ background-color:#ffffff ;"> 
+<div style="color:#26368f;  margin-left: auto; margin-right: auto; text-align: center; font-size: 24px; font-weight: 500; margin-top: 20px;">
+      
+    Sing-Up
+
+</div>
+
+
+<img src="assets/singUp.jpg" style="width: 250px; height: auto; margin-top: 40px;">
+<form #singupForm = "ngForm" (ngSubmit)="onSubmit()" class="singUpC">
+    <div>
+        <mat-form-field appearance="outline" style="width: 300px;">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="" [(ngModel)] = firstName name = firstName required>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="outline" style="width: 300px;">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="" [(ngModel)] = lastName name = lastName required>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="outline" style="width: 300px;">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Ex: you@you.com" [(ngModel)] = email name = email required>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="outline" style="width: 300px;">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="8 charters or more" [(ngModel)] = password name = password required>
+        </mat-form-field>
+    </div>
+    <div>
+        <button [disabled] = "!singupForm.form.valid" type="submit" style="width: 100px; height:40px"  mat-raised-button color="primary">Sing Up</button>
+    </div>
+    <br>
+
+    <span>Don't have an account?<a href="/login" style="color: #228b57;font-weight: 900;"> Press to Login</a></span>
+    <br>    
+    <br>
+
+    <p *ngIf = "isError" style="color: red;">{{errorMessage}}</p>
+</form>
+
+</mat-card>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+

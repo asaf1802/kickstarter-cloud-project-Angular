@@ -1,0 +1,12 @@
+.navbar{
+    justify-content: space-between;
+    background-color:rgb(5, 206, 120);
+}
+
+span{
+    padding-right: 1rem;
+}
+.fill{
+    flex: 1 1 auto;
+}
+

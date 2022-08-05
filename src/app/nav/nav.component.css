@@ -1,0 +1,22 @@
+/* shir */
+
+
+span{
+    padding-right: 1rem;
+}
+.fill{
+    flex: 1 1 auto;
+}
+
+.mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    height: 50px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color:rgb(5, 206, 120);
+
+  }
+
+ 

@@ -1,0 +1,65 @@
+<!-- shir -->
+<mat-card style="max-width: 800px;
+ min-width: 800px; 
+ height: 450px; 
+ top: 100px; 
+ margin-left: auto; 
+ margin-right: auto; 
+ padding-left: 0px; 
+ padding-right: 50px; 
+ background-color:#ffffff ;">
+<div style="color:#26368f;  margin-left: auto; margin-right: auto; text-align: center; font-size: 24px; font-weight: 500; margin-top: 20px;">
+      
+    LOG-IN
+
+</div>
+<img src="assets/login.jpg" style="width: 300px; height: auto;">
+<form #loginForm = "ngForm" (ngSubmit)="onSubmit()" class="loginC">
+    <div>
+        <mat-form-field appearance="outline" style="width: 300px;" >
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Ex: you@you.com" [(ngModel)] = email name = email required >
+        </mat-form-field>
+    </div>
+    <br>
+    <div>
+        <mat-form-field appearance="outline" style="width: 300px;">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Ex: you@you.com" [(ngModel)] = password name = password required>
+        </mat-form-field>
+    </div>
+    <div>
+        <button [disabled] = "!loginForm.form.valid" type="submit" style="width: 100px; height:40px" mat-raised-button color="primary">Login</button>
+        <br>    <br>
+
+            <span>Don't have an account?<a href="/singup" style="color: #228b57;font-weight: 900;"> Press to SingUp</a></span>
+            <br>    <br>
+
+    </div>
+    <br>
+    <p *ngIf = "isError" style="color: red;">{{errorMessage}}</p>
+</form>
+</mat-card>
+<br>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    

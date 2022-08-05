@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "kickstarterproject-jce"
+  },
+  "targets": {
+    "kickstarterproject-jce": {
+      "hosting": {
+        "kickstarterProject": [
+          "kickstarterproject-jce"
+        ]
+      }
+    }
+  }
+}
